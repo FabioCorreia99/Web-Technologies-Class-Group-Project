@@ -9,18 +9,114 @@
     <title>QuickBite</title>
 </head>
 <body>
-    <div class="splash">
-        <div class="text-center">
-            <img class="logo" src="/Assets/images/logo/quickbite_logo.svg" alt="QuickBite logo">
+
+    <!-- Animation Homepage -->
+    <div class="splash" style="background-color: #FF9F1C; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img class="logo" src="./assets/quickbite_logo.svg" alt="QuickBite logo" style="width: 200px; height: 200px;">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #FFBF69;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/quickbite_logo_2.png" alt="Logo do QuickBite" class="img-fluid" style="max-height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./browse.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./offers.html">Offers and Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./carts.html">Carts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./account.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF9F1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                                <path d="M16 11l2 2 4-4"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        TESTE
-    </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section id="restaurant-carousel-section" class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center mt-3 mb-5">Restaurantes em Destaque</h2>
+                        <div id="restaurant-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <!-- Conteúdo do primeiro slide -->
+                                            <img src="./assets/Eusébios.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 1" style="object-fit: cover;">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <!-- Conteúdo do primeiro slide -->
+                                            <img src="./assets/McDonald's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 2" style="object-fit: cover;">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <!-- Conteúdo do primeiro slide -->
+                                            <img src="./assets/DonaMariaPregaria.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 3" style="object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <!-- Conteúdo do segundo slide -->
+                                            <img src="./assets/PizzaHut.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <!-- Conteúdo do segundo slide -->
+                                            <img src="./assets/Subway.png" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <!-- Conteúdo do segundo slide -->
+                                            <img src="./assets/Chilli's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Adicionar mais slides conforme necessário -->
+                            </div>
+
+                            <!-- Controles do carousel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#restaurant-carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#restaurant-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-    <script src="/Assets/index.js"></script>
+    <!-- JavaScript -->
+    <script src="./js/index.js"></script>
+
 
 </body>
 </html>
