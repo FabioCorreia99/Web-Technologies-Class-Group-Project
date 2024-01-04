@@ -5,7 +5,6 @@
 body {
     font-family: 'Montserrat';
     color: var(--font_color);
-    /* overflow: hidden; */
 }
 
 .carousel-item img {
