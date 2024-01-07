@@ -1,0 +1,6 @@
+.forgot:link{
+    color: var(--color-light-orange);
+}
+.forgot:visited{
+    color: var(--color-light-orange);
+}

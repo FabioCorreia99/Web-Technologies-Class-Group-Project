@@ -1,19 +1,11 @@
+/*Import Font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito:wght@200&family=Raleway&display=swap');
-@import url("./shared/reset.css");
-@import url("./shared/variables.css");
-@import url("./offers.css"); 
-body {
-    font-family: 'Montserrat';
-    color: var(--font_color);
-}
+/*Import CSS Shared*/
+@import url("../shared/base.css");
+@import url("../shared/reset.css");
+@import url("../shared/variables.css");
+/*Import CSS Pages*/
+@import url("./pages/offers.css"); 
+@import url("./pages/LoginPage.css");
+@import url("./pages/homepage.css");
 
-.carousel-item img {
-    width: 350px; /* Defina a largura desejada */
-    height: 250px; /* Defina a altura desejada */
-}
-
-@media only screen and (max-width: 1024px) {
-    html {
-      font-size: 10px;
-    }
-}

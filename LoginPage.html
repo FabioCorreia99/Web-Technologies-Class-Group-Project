@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Styles/style.css">
-    <title>QuickBite</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>QuickBite - Login</title>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #FF9F1C;">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="./assets/quickbite_logo_2.png" alt="Logo do QuickBite" class="img-fluid" style="max-height: 60px;">
             </a>
             <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,34 +48,64 @@
         </div>
     </nav>
 
-    
-    <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action active">1</a>
-        <a href="#" class="list-group-item list-group-item-action">2</a>
-        <a href="#" class="list-group-item list-group-item-action">3</a>
-        <a href="#" class="list-group-item list-group-item-action">4</a>
-        <a href="#" class="list-group-item "></a>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card ">
+
+            </div>
+        </div>
     </div>
+    <br><br><br>
+    <!--Section-->
+    <section class="vh-100 ">
+        <div class="container py-5 h-100">
+            <div class="row d-flex align-items-center justify-content-center">
+                <!--Image-->
+                <div class="col-md-8  col-lg-7 col-xl-6">
+                    <img src="./assets/quickbite_logo_1.png" alt="Image Logo" class="img-fluid ">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1 ">
+                    <!--Form-->
+                    <form>
+                        <!--Email Input-->
+                        <div class="form-floating mb-3">
+                            <input
+                                type="email"
+                                class="form-control"
+                                name="Email"
+                                id="Idemail"
+                                placeholder="abc@mail.com"
+                            />
+                            <label for="Idemail">Email address</label>
+                        </div>
+                        <br>
+                        <!--Password Input-->
+                        <div class="form-floating mb-3">
+                            <input
+                                type="password"
+                                class="form-control"
+                                name="password"
+                                id="passId"
+                                placeholder="Password"
+                            />
+                            <label for="passId">Password</label>
+                        </div>
 
-    <button
-        class="btn btn-primary"
-    >
-        Notifications
-        <span
-            class="badge bg-primary"
-            >12</span
-        >
-    </button>
+                        <div class="d-flex justify-content-around  align-content-center  mb-3 " >
+                            <!--Check Button-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="RememberMe" id="rememberId" />
+                                <label class="form-check-label" for="rememberId"> Remember me </label>
+                            </div>
+                            <a class="forgot" href="#">Forgot password?</a>
+                        </div>
+                                         
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <button class="btn">
-            Notification <span class="badge badge-primary"></span>
-    </button>
-
-    <div class="alert alert-warning" role="alert">
-        <strong>warning</strong>
-    </div>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
