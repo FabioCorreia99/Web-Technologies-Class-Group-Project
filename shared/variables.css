@@ -5,4 +5,5 @@
     --color-teal: #2EC4B6;
     --color-light-aqua: #CBF3F0;
     --color-white: #FFFFFF;
+    --color-gradient: linear-gradient(180deg, rgba(255,159,28,1) 0%, rgba(215,186,69,1) 100%);
 }
