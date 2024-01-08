@@ -4,3 +4,7 @@
 .forgot:visited{
     color: var(--color-light-orange);
 }
+.heroLogin {
+    background: rgb(255,159,28);
+    background: linear-gradient(180deg, rgba(255,159,28,1) 0%, rgba(215,186,69,1) 100%);
+}
