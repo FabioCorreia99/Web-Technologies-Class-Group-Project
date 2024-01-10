@@ -1,4 +1,25 @@
+/* Animation Homepage */
+.splash {
+    background-color: var(--color-orange);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo size */
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+/* Carousel */
 .carousel-item img {
-    width: 350px; /* Defina a largura desejada */
-    height: 250px; /* Defina a altura desejada */
+    width: 350px;
+    height: 250px;
+}
+
+.carousel-caption h5 {
+    color: var(--color-white);
+    font-weight: bold;
 }

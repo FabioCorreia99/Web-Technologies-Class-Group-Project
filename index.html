@@ -11,8 +11,8 @@
 <body>
 
     <!-- Animation Homepage -->
-    <div class="splash" style="background-color:var(--color-orange); height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <img class="logo" src="./assets/quickbite_logo.svg" alt="QuickBite logo" style="width: 200px; height: 200px;">
+    <div class="splash">
+        <img class="logo" src="./assets/quickbite_logo.svg" alt="QuickBite logo">
     </div>
 
     <!-- Navbar -->
@@ -52,64 +52,84 @@
         </div>
     </nav>
 
-    <!-- Carousel -->
-    <section id="restaurant-carousel-section" class="my-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="text-center mt-3 mb-5">Restaurantes em Destaque</h2>
-                        <div id="restaurant-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                            <!-- Slides -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <!-- Conteúdo do primeiro slide -->
-                                            <img src="./assets/Eusébios.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 1" style="object-fit: cover;">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <!-- Conteúdo do primeiro slide -->
-                                            <img src="./assets/McDonald's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 2" style="object-fit: cover;">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <!-- Conteúdo do primeiro slide -->
-                                            <img src="./assets/DonaMariaPregaria.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 3" style="object-fit: cover;">
-                                        </div>
+<!-- Carousel -->
+<section id="restaurant-carousel-section" class="my-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-center mt-3 mb-5">Restaurantes em Destaque</h3>
+                <div id="restaurant-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 position-relative">
+                                    <!-- Conteúdo da primeira imagem -->
+                                    <img src="./assets/Eusébios.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 1" style="object-fit: cover;">
+                                    <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
+                                        <h4>Os Eusébios</h4>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <!-- Conteúdo do segundo slide -->
-                                            <img src="./assets/PizzaHut.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <!-- Conteúdo do segundo slide -->
-                                            <img src="./assets/Subway.png" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <!-- Conteúdo do segundo slide -->
-                                            <img src="./assets/Chilli's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
-                                        </div>
+                                <div class="col-md-4 position-relative">
+                                    <!-- Conteúdo da segunda imagem -->
+                                    <img src="./assets/McDonald's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 2" style="object-fit: cover;">
+                                    <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
+                                        <h4>McDonald's</h4>
                                     </div>
                                 </div>
-                                <!-- Adicionar mais slides conforme necessário -->
+                                <div class="col-md-4 position-relative">
+                                    <!-- Conteúdo da terceira imagem -->
+                                    <img src="./assets/DonaMariaPregaria.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 3" style="object-fit: cover;">
+                                    <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
+                                        <h4>Dona Maria Pregaria</h4>
+                                    </div>
+                                </div>
                             </div>
-
-                            <!-- Controles do carousel -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#restaurant-carousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#restaurant-carousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
+                        <!-- Segundo slide -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 position-relative">
+                                    <!-- Conteúdo da quarta imagem -->
+                                    <img src="./assets/PizzaHut.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
+                                    <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
+                                        <h4>Pizza Hut</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 position-relative">
+                                    <!-- Conteúdo da quinta imagem -->
+                                    <img src="./assets/Subway.png" class="d-block mx-auto rounded-2" alt="Restaurante 5" style="object-fit: cover;">
+                                    <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
+                                        <h4>Subway</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 position-relative">
+                                    <!-- Conteúdo da sexta imagem -->
+                                    <img src="./assets/Chilli's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 6" style="object-fit: cover;">
+                                    <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
+                                        <h4>Chillis - Tex Mex</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicione mais slides conforme necessário -->
+                    </div>
+
+                    <!-- Controles do carrossel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#restaurant-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#restaurant-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
 
