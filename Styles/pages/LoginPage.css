@@ -1,9 +1,28 @@
+.main{
+    background: var(--color-gradient);
+}
 .forgot:link{
-    color: var(--color-teal);
+    color: var(--color-white);
 }
 .forgot:visited{
-    color: var(--color-teal);
+    color: var(--color-white);
 }
 .heroLogin {
     background: var(--color-gradient);
 }
+.form-check-label{
+    color: var(--color-white);
+}
+.line_main{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+#signin{
+    background-color: var(--color-orange);
+    border-color: var(--color-white);
+}
+#signin:hover{
+    background-color: var(--color-light-orange);
+}
+
