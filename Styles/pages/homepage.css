@@ -18,7 +18,7 @@
 }
 
 /* Hero */
-.btn {
+#button-addon2 {
     color: var(--color-white);
     background-color: var(--color-teal);
 }
