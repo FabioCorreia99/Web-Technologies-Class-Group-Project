@@ -1,12 +1,15 @@
 #header1 {
     font-size: 50px;
 }
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 .bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
 }
 .bg svg {
@@ -19,15 +22,17 @@
     z-index: -1;
 }
 nav {
-    position: relative;
-    z-index: 1;
+    z-index: 1000;
 }
 #headline {
     position: relative;
-    top: 50px;
+    z-index: 1;
+    margin-top: 12vh;
 }
-h2 {
-    
+h2 { 
     font-weight: bolder;
     margin-left: 25px;
+}
+#carouselExample {
+    margin-top: 22vh;
 }
