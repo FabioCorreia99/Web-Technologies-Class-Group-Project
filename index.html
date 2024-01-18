@@ -9,6 +9,8 @@
     <title>QuickBite</title>
 </head>
 <body>
+    <script src="./js/index.js"></script>
+
 
     <!-- Animation Homepage -->
     <div class="splash">
@@ -16,31 +18,31 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: var(--color-orange);">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/quickbite_logo_2.png" alt="Logo do QuickBite" class="img-fluid" style="max-height: 60px;">
+            <a class="navbar-brand" href="./index.html">
+                <img src="/assets/quickbite_logo_2.png" alt="Logo do QuickBite" class="img-fluid" style="max-height: 60px;">
             </a>
-            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./index.html">Home</a>
+                        <a class="nav-link text-black" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./browse.html">Browse</a>
+                        <a class="nav-link text-black" href="./browse.html">Browse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./offers.html">Offers and Promos</a>
+                        <a class="nav-link text-black" href="./offers.html">Offers and Promos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./carts.html">Carts</a>
+                        <a class="nav-link text-black" href="./carts.html">Carts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./account.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                        <a class="nav-link" href="./LoginPage.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
                                 <path d="M16 11l2 2 4-4"></path>
@@ -52,14 +54,67 @@
         </div>
     </nav>
 
+    <!-- background gradient -->
+    <div class="bg">
+        <svg width="100%" height="130vh" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="var(--color-light-orange)"></stop><stop offset="95%" stop-color="var(--color-orange)"></stop></linearGradient></defs><path d="M 0,400 L 0,100 C 106.38277511961724,103.30143540669856 212.76555023923447,106.60287081339712 307,119 C 401.23444976076553,131.39712918660288 483.32057416267946,152.88995215311007 589,142 C 694.6794258373205,131.11004784688993 823.9521531100478,87.83732057416267 912,90 C 1000.0478468899522,92.16267942583733 1046.8708133971293,139.76076555023923 1128,149 C 1209.1291866028707,158.23923444976077 1324.5645933014353,129.1196172248804 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="var(--color-orange)"></stop><stop offset="95%" stop-color="#ffbf69"></stop></linearGradient></defs><path d="M 0,400 L 0,233 C 86.23923444976077,263.8038277511962 172.47846889952154,294.60765550239233 275,282 C 377.52153110047846,269.39234449760767 496.32535885167465,213.3732057416268 590,206 C 683.6746411483253,198.6267942583732 752.2200956937799,239.89952153110045 853,240 C 953.7799043062201,240.10047846889955 1086.7942583732058,199.02870813397132 1190,191 C 1293.2057416267942,182.97129186602868 1366.6028708133972,207.98564593301433 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+    </div>
+
+    <!-- Hero -->
+    <section class="container mt-5 mb-4">
+        <div class="hero row align-items-center justify-content-center">
+            <div class="col-md-6">
+                <section class="text-center">
+                    <h1 class="hero_title mb-4">Are you starving?</h1>
+                    <h6 class="hero_slogan mb-3">Within a few clicks, find meals that are accessible near you.</h6>
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control" placeholder="Enter Your Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Find Food</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/Scooter.webp" class="img-fluid" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section class="container bg-white mt-6 mb-4">
+        <h3 class="container_headline text-center mt-5 mb-5">How does it work</h3>
+        <div class="row">
+            <div class="col-md-3 text-center mb-4 mb-md-0">
+                <svg fill="var(--color-light-orange)" width="120px" height="120px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 395.71 395.71" xml:space="preserve" stroke="#FFBF69"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"></path> </g> </g></svg>
+                <h5 class="mt-3 font-weight-bold">Select location</h5>
+                <p>Select the location where your food will be delivered</p>
+            </div>
+            <div class="col-md-3 text-center mb-4 mb-md-0">
+                <svg viewBox="0 -1 32 32" height="120px" width="120px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="var(--color-light-orange)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>cart</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-466.000000, -726.000000)" fill="#FFBF69"> <path d="M475.97,734 L473.475,726 L467,726 C466.447,726 466,726.448 466,727 C466,727.553 466.447,728 467,728 L472,728 L474.011,734 L474,734 L476,746 C476,748.209 477.791,750 480,750 L491,750 C493.209,750 495,748.209 495,746 L498,734 L475.97,734 L475.97,734 Z M490,752 C488.896,752 488,752.896 488,754 C488,755.104 488.896,756 490,756 C491.104,756 492,755.104 492,754 C492,752.896 491.104,752 490,752 L490,752 Z M480,752 C478.896,752 478,752.896 478,754 C478,755.104 478.896,756 480,756 C481.104,756 482,755.104 482,754 C482,752.896 481.104,752 480,752 L480,752 Z" id="cart" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                <h4 class="mt-3">Choose order</h4>
+                <p>Check over hundreds of menus to pick your favorite food</p>
+            </div>
+            <div class="col-md-3 text-center mb-4 mb-md-0">
+                <svg fill="var(--color-light-orange)" height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210 256" enable-background="new 0 0 210 256" xml:space="preserve" stroke="#FFBF69"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M174.55,144.5L174.55,144.5c-1.4-4-5-6.5-9.2-6.5H159V23c0-11.708-9.292-21-21-21H25C12.57,2,2,12.57,2,25v183 c0,11.9,10.95,22,22.75,22l114.213,0c1.207,0,2.27,0.984,2.18,2.188c-0.095,1.266-1.153,1.812-2.393,1.812h-45.5L128,254h80 L174.55,144.5z M82.05,220.2c-3.199,0-5.599-2.399-5.6-5.598c-0.001-3.045,2.557-5.602,5.602-5.602 c3.199,0.001,5.598,2.401,5.598,5.6C87.55,217.8,85.25,220.2,82.05,220.2z M144,138h-19.65c-5.3,0-9.8,4.7-9.8,10l0,0 c0,5.3,4.5,10,9.8,10h19.8v42H18V31h126V138z M80.636,134.85c23.663,0,43-19.21,43-43s-19.21-43-43-43S37.763,68.188,37.763,91.977 C37.763,115.64,56.973,134.85,80.636,134.85z M78.261,95.497c-7.888-2.756-12.807-6.743-12.807-13.824 c0-6.531,4.325-11.662,12.255-13.273v-7.082h5.937v6.743c4.919,0,8.481,1.018,11.11,2.417l-2.417,8.481 c-1.951-0.806-5.131-2.163-9.499-2.163s-6.743,2.163-6.743,4.325c0,2.968,2.756,4.113,8.693,6.531 c8.1,2.968,11.874,7.082,11.874,13.824c0,6.743-4.113,11.874-12.807,13.824v6.743h-5.937v-6.531c-5.131,0-10.305-1.357-12.807-2.756 l2.163-8.693c2.756,1.357,7.082,2.968,11.662,2.968c4.919,0,7.336-2.163,7.336-5.131S83.944,97.702,78.261,95.497z"></path> </g></svg>
+                <h4 class="mt-3">Pay advanced</h4>
+                <p>It's quick, safe and simple. Select several methods of payment</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <svg fill="var(--color-light-orange)" height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.091 512.091" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <path d="M66.202,269.537c1.596,2.244,4.181,3.575,6.938,3.575h365.722c2.756,0,5.342-1.331,6.938-3.575l30.473-42.667 c1.86-2.603,2.116-6.025,0.649-8.866c-1.459-2.842-4.386-4.625-7.586-4.625h-17.28c-4.369-101.444-86.076-183.151-187.52-187.52 v-8.747H281.6c4.719,0,8.533-3.823,8.533-8.533s-3.814-8.533-8.533-8.533h-51.2c-4.719,0-8.533,3.823-8.533,8.533 s3.814,8.533,8.533,8.533h17.067v8.747c-101.444,4.369-183.151,86.076-187.52,187.52h-17.28c-3.2,0-6.127,1.783-7.586,4.625 c-1.468,2.842-1.212,6.263,0.649,8.866L66.202,269.537z M115.635,140.829c28.988-49.997,82.773-81.05,140.365-81.05 c4.719,0,8.533,3.823,8.533,8.533s-3.814,8.533-8.533,8.533c-51.524,0-99.652,27.793-125.602,72.542 c-1.579,2.731-4.446,4.258-7.39,4.258c-1.451,0-2.927-0.375-4.275-1.152C114.662,150.121,113.263,144.908,115.635,140.829z M68.267,230.446h375.467h9.02l-18.287,25.6H77.534l-18.287-25.6H68.267z"></path> <path d="M507.614,316.001c-15.027-21.188-30.165-21.632-68.326-1.544l-73.591,44.988c-5.751,3.063-14.703,4.983-25.071,6.17 c-8.047,0.93-15.369,4.395-22.076,8.926c-0.879,0.597-1.826,0.973-2.816,0.973h-82.927c-25.6,0-25.6,12.843-25.6,17.067 c0,4.71-3.814,8.533-8.533,8.533s-8.533-3.823-8.533-8.533c0-21.376,15.949-34.133,42.667-34.133h79.846 c-0.009-5.931-2.347-12.476-7.108-19.584c-13.38-19.951-36.301-31.855-61.338-31.855h-33.28 c-18.082,0-35.447-5.589-48.905-15.727c-30.601-23.091-78.78,1.86-102.289,16.802v-17.903H0v221.867h59.733v-25.6h110.933 c17.468,0,34.91-1.314,52.173-3.942l110.635-16.819c4.028-0.051,8.107-0.529,11.742-1.348 c10.189-1.434,19.925-6.298,28.177-14.08l129.34-100.727l0.205-0.162C512.973,341.208,515.098,326.557,507.614,316.001z M42.667,320.105v166.34v8.533h-25.6V307.246h25.6V320.105z"></path> </g> </g> </g> </g></svg>
+                <h4 class="mt-3">Enjoy meals</h4>
+                <p>Food is made and delivered directly to your home</p>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Carousel -->
-    <section id="restaurant-carousel-section" class="my-4">
+    <section id="restaurant-carousel-section" class="mt-6 mb-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="text-center mt-3 mb-5">Restaurantes em Destaque</h3>
+                    <h3 class="text-center mt-5 mb-5">Restaurantes em Destaque</h3>
                     <div id="restaurant-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                        <!-- Slides -->
+                        <!-- Primeiro slide -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
@@ -67,21 +122,21 @@
                                         <!-- Conteúdo da primeira imagem -->
                                         <img src="./assets/Eusébios.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 1" style="object-fit: cover;">
                                         <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
-                                            <h4><a href="#">Os Eusébios</a></h4>
+                                            <h5><a href="#">Os Eusébios</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <!-- Conteúdo da segunda imagem -->
                                         <img src="./assets/McDonald's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 2" style="object-fit: cover;">
                                         <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
-                                            <h4><a href="#">McDonald's</a></h4>
+                                            <h5><a href="#">McDonald's</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <!-- Conteúdo da terceira imagem -->
                                         <img src="./assets/DonaMariaPregaria.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 3" style="object-fit: cover;">
                                         <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
-                                            <h4><a href="#">Dona Maria Pregaria</a></h4>
+                                            <h5><a href="#">Dona Maria Pregaria</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -93,26 +148,25 @@
                                         <!-- Conteúdo da quarta imagem -->
                                         <img src="./assets/PizzaHut.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 4" style="object-fit: cover;">
                                         <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
-                                            <h4><a href="#">Pizza Hut</a></h4>
+                                            <h5><a href="#">Pizza Hut</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <!-- Conteúdo da quinta imagem -->
-                                        <img src="./assets/Subway.png" class="d-block mx-auto rounded-2" alt="Restaurante 5" style="object-fit: cover;">
+                                        <img src="./assets/Subway.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 5" style="object-fit: cover;">
                                         <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
-                                            <h4><a href="#">Subway</a></h4>
+                                            <h5><a href="#">Subway</a></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <!-- Conteúdo da sexta imagem -->
                                         <img src="./assets/Chilli's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 6" style="object-fit: cover;">
                                         <div class="carousel-caption text-dark position-absolute bottom-0 start-0 end-0">
-                                            <h4><a href="#">Chillis - Tex Mex</h4>
+                                            <h5><a href="#">Chillis - Tex Mex</a></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Adicione mais slides conforme necessário -->
                         </div>
 
                         <!-- Controles do carrossel -->
@@ -130,9 +184,105 @@
         </div>
     </section>
 
+    <!-- Client Feedback -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <!-- Cartão 1 -->
+            <h3 class="text-center mt-5 mb-5">Client feedback</h3>
+            <div class="col-md-4">
+                <div class="card">
+                    <svg width="120px" height="120px" class="card-img-top" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM11.9999 6C9.79077 6 7.99991 7.79086 7.99991 10C7.99991 12.2091 9.79077 14 11.9999 14C14.209 14 15.9999 12.2091 15.9999 10C15.9999 7.79086 14.209 6 11.9999 6ZM17.1115 15.9974C17.8693 16.4854 17.8323 17.5491 17.1422 18.1288C15.7517 19.2966 13.9581 20 12.0001 20C10.0551 20 8.27215 19.3059 6.88556 18.1518C6.18931 17.5723 6.15242 16.5032 6.91351 16.012C7.15044 15.8591 7.40846 15.7251 7.68849 15.6097C8.81516 15.1452 10.2542 15 12 15C13.7546 15 15.2018 15.1359 16.3314 15.5954C16.6136 15.7102 16.8734 15.8441 17.1115 15.9974Z" fill="var(--color-gray)"></path> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Ethan Turner</h5>
+                        <p class="card-text text-center">"Very fast delivery!"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cartão 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <svg width="120px" height="120px" class="card-img-top" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM11.9999 6C9.79077 6 7.99991 7.79086 7.99991 10C7.99991 12.2091 9.79077 14 11.9999 14C14.209 14 15.9999 12.2091 15.9999 10C15.9999 7.79086 14.209 6 11.9999 6ZM17.1115 15.9974C17.8693 16.4854 17.8323 17.5491 17.1422 18.1288C15.7517 19.2966 13.9581 20 12.0001 20C10.0551 20 8.27215 19.3059 6.88556 18.1518C6.18931 17.5723 6.15242 16.5032 6.91351 16.012C7.15044 15.8591 7.40846 15.7251 7.68849 15.6097C8.81516 15.1452 10.2542 15 12 15C13.7546 15 15.2018 15.1359 16.3314 15.5954C16.6136 15.7102 16.8734 15.8441 17.1115 15.9974Z" fill="var(--color-gray)"></path> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Olivia Harris</h5>
+                        <p class="card-text text-center">"Very friendly staff, I recommend it.""</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cartão 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <svg width="120px" height="120px" class="card-img-top" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM11.9999 6C9.79077 6 7.99991 7.79086 7.99991 10C7.99991 12.2091 9.79077 14 11.9999 14C14.209 14 15.9999 12.2091 15.9999 10C15.9999 7.79086 14.209 6 11.9999 6ZM17.1115 15.9974C17.8693 16.4854 17.8323 17.5491 17.1422 18.1288C15.7517 19.2966 13.9581 20 12.0001 20C10.0551 20 8.27215 19.3059 6.88556 18.1518C6.18931 17.5723 6.15242 16.5032 6.91351 16.012C7.15044 15.8591 7.40846 15.7251 7.68849 15.6097C8.81516 15.1452 10.2542 15 12 15C13.7546 15 15.2018 15.1359 16.3314 15.5954C16.6136 15.7102 16.8734 15.8441 17.1115 15.9974Z" fill="var(--color-gray)"></path> </g></svg>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Liam Mitchell</h5>
+                        <p class="card-text text-center">"Nice app!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- JavaScript -->
-    <script src="./js/index.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1 -->
+                <div class="col-md-4 text-center">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">About us</a></li>
+                        <li><a href="#" class="footer-links">Team</a></li>
+                        <li><a href="#" class="footer-links">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-md-4 text-center">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">Help and Support</a></li>
+                        <li><a href="#" class="footer-links">Partner with us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-md-4 text-center">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">Terms and Conditions</a></li>
+                        <li><a href="#" class="footer-links">Refund and Cancellation</a></li>
+                        <li><a href="#" class="footer-links">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <h5>FOLLOW US</h5>
+                    <div class="d-flex justify-content-center">
+                        <svg width="55px" height="55px" class="mr-2" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="var(--color-white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="var(--color-white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="var(--color-white)"></rect> <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="var(--color-white)" stroke-linecap="round"></rect> </g></svg>
+                        <svg fill="#FFFFFF" width="55px" height="55px" class="mr-2" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook</title> <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path> </g></svg>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>Receive exclusive offers in your mailbox</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </body>

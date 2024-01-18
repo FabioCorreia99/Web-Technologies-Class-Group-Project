@@ -13,14 +13,38 @@
     height: 200px;
 }
 
-/* Carousel */
-.carousel-item img {
-    width: 350px;
-    height: 250px;
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.carousel-caption h4 a {
+/* Hero */
+#button-addon2 {
+    color: var(--color-white);
+    background-color: var(--color-teal);
+}
+
+/* Container */
+.container_headline {
+    font-weight: bold;
+}
+
+
+/* Carousel */
+.carousel-item img {
+    width: 400px;
+    height: 300px;
+}
+
+.carousel-caption h5 a {
     color: var(--color-white);
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Footer */
+.footer-links,
+.footer-links h5 {
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
 }
