@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>QuickBite</title>
+</head>
+<body>
+    <script src="./js/index.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: var(--color-orange);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/quickbite_logo_2.png" alt="Logo do QuickBite" class="img-fluid" style="max-height: 60px;">
+            </a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./browse.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./offers.html">Offers and Promos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./carts.html">Carts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./account.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--font-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                                <path d="M16 11l2 2 4-4"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Meals -->
+    <section class="container mt-4">
+        <h3 class="container_headline text-center  mt-5 mb-5">Os Eusébios Restaurant</h3>
+        <h4 class="mb-4 fw-bolder mt-6 mb-3">Meal</h4>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Prato 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/Eusébios.jpg" class="card-img-top w-50 h-auto" alt="Imagem Prato 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Francesinha Especial Eusébios</h5>
+                        <p class="card-text">10,00€</p>
+                        <p class="card-text"><small class="text-body-secondary">Corned beef burger, barbecue sauce, fried onion, iceberg lettuce, roasted tomato, grilled bacon and cheddar cheese.</small></p>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/Eusébios.jpg" class="card-img-top w-50 h-auto" alt="Imagem Prato 1" id="card_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Francesinha Especial Eusébios</h5>
+                        <p class="card-text">10,00€</p>
+                        <p class="card-text"><small class="text-body-secondary">Corned beef burger, barbecue sauce, fried onion, iceberg lettuce, roasted tomato, grilled bacon and cheddar cheese.</small></p>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/Eusébios.jpg" class="card-img-top w-50 h-auto" alt="Imagem Prato 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Francesinha Especial Eusébios</h5>
+                        <p class="card-text">10,00€</p>
+                        <p class="card-text"><small class="text-body-secondary">Corned beef burger, barbecue sauce, fried onion, iceberg lettuce, roasted tomato, grilled bacon and cheddar cheese.</small></p>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/Eusébios.jpg" class="card-img-top w-50 h-auto" alt="Imagem Prato 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Francesinha Especial Eusébios</h5>
+                        <p class="card-text">10,00€</p>
+                        <p class="card-text"><small class="text-body-secondary">Corned beef burger, barbecue sauce, fried onion, iceberg lettuce, roasted tomato, grilled bacon and cheddar cheese.</small></p>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Drinks -->
+    <section class="container mt-4">
+        <h4 class="mb-4 fw-bolder mt-6 mb-3">Drinks</h4>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Prato 1 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Sparkling wine sangria</h5>
+                            <p class="card-text">18,00€</p>
+                            <p class="card-text"><small class="text-body-secondary">Flavors: Red berries and passion fruit</small></p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 2 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Beer 1927 - 33 cl</h5>
+                            <p class="card-text">3,40€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Prato 3 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Beer Bohemia - 33 cl </h5>
+                            <p class="card-text">3,40€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 4 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Soft drinks</h5>
+                            <p class="card-text">2,60€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobremesas -->
+    <section class="container mt-4">
+        <h4 class="mb-4 fw-bolder mt-6 mb-3">Desserts</h4>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Prato 1 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Chocolate mousse</h5>
+                            <p class="card-text">4,00€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 2 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Red fruit cheesecake</h5>
+                            <p class="card-text">4,50€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Prato 3 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Bailey's pannacotta</h5>
+                            <p class="card-text">5,00€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prato 4 -->
+            <div class="col">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Lemon meringue pie</h5>
+                            <p class="card-text">5,00€</p>
+                        </div>
+                        <button class="btn btn-primary">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1 -->
+                <div class="col-md-4 text-center">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">About us</a></li>
+                        <li><a href="#" class="footer-links">Team</a></li>
+                        <li><a href="#" class="footer-links">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-md-4 text-center">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">Help and Support</a></li>
+                        <li><a href="#" class="footer-links">Partner with us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-md-4 text-center">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">Terms and Conditions</a></li>
+                        <li><a href="#" class="footer-links">Refund and Cancellation</a></li>
+                        <li><a href="#" class="footer-links">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <h5>FOLLOW US</h5>
+                    <div class="d-flex justify-content-center">
+                        <svg width="55px" height="55px" class="mr-2" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="var(--color-white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="var(--color-white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="var(--color-white)"></rect> <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="var(--color-white)" stroke-linecap="round"></rect> </g></svg>
+                        <svg fill="#FFFFFF" width="55px" height="55px" class="mr-2" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook</title> <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path> </g></svg>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>Receive exclusive offers in your mailbox</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
