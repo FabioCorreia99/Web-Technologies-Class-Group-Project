@@ -1,0 +1,17 @@
+.highlight {
+    background-color: var(--color-light-orange);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.details {
+    background-color: var(--color-light-orange);
+    border-radius: 10px;
+}
+.form-floating {
+    
+}
+.info {
+    
+}
