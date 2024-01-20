@@ -1,21 +1,15 @@
-.card, .txt, .card_title, .card_sub-title, .card_link{
+.column, .card, .txt, .card_title, .card_sub-title, .card_link{
     transition: .5s;
 } 
 
 .gr-1{
     background: var(--color-gradient);
 }
-.align-middle{
-  position: relative;
-  top:50%;
-  transform:translateY(-50%);
-}
-
 .column{
     margin-top: 3rem;
     padding-left: 3rem;
     &:hover{
-        margin-left: 0;
+        padding-left: 0;
         .card, .txt{
             margin-left: 1rem;
             h1, p{
@@ -25,9 +19,7 @@
         }
         .card_link{
             color: var(--color-black);
-            &:after{
-                width: 10%;
-            }
+            
         }
     }
 }
@@ -45,7 +37,7 @@
       z-index: 1;
       .card_title{
         font-size:1.5rem;
-        font-weight: 300;
+        font-weight: bolder;
         text-transform: uppercase;
       }
       .card_sub-title{
@@ -65,8 +57,15 @@
         height: 100%;
         overflow: hidden;
     }
+    
 }
 
 .card_link{
     color: var(--color-black);
+}
+.ico-card-img{
+    position: relative;
+    right: -50%;
+    font-size: 12rem;
+    line-height: 0;
 }
