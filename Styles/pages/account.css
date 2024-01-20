@@ -1,9 +1,7 @@
-#pills-security .card-body {
+#pills-security  {
     padding-top: 20px; /* Ou ajuste o valor conforme necessário */
 }
-html, body {
-    overflow-x: hidden;
-}
+
 .button_color{ 
     background-color: var(--color-teal); 
     border-color: var(--color-teal);
@@ -21,27 +19,6 @@ html, body {
 .nav_account .nav-link.active {
     background-color: var(--color-teal); /* Cor de fundo para o botão ativo */
     color: var(--color-white); /* Cor do texto para o botão ativo */
-}
-.form-check-label{
-    color: var(--color-black);
-}
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    border-color: transparent;
-    border-radius: .25rem;
-    padding: auto;
-    margin: 0;
-    background-color: transparent;
-}
-.card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1rem;
-    
-    background-color: transparent;
 }
 
 .nav_acc{

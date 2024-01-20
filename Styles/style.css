@@ -3,6 +3,7 @@
 /* @import url("../shared/reset.css"); */
 @import url("../shared/variables.css");
 @import url("../shared/base.css");
+@import url("../shared/bootstrap.css");
 /*Import CSS Pages*/
 @import url("./pages/offers.css");
 @import url("./pages/LoginPage.css");

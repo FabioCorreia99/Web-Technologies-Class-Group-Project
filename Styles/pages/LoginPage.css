@@ -10,9 +10,6 @@
 .heroLogin {
     background: var(--color-gradient);
 }
-.form-check-label{
-    color: var(--color-white);
-}
 .line_main{
     border: 0;
     height: 1px;
