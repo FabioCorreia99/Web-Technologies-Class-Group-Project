@@ -1,0 +1,54 @@
+
+.category_block li:hover {
+    background-color: var(--color-teal);
+}
+.category_block li:hover a {
+    color: var(--color-white);
+}
+.category_block li a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.cat_menu{
+    background-color: var(--color-teal) !important;
+    border-color: var(--color-teal) !important;
+}
+.cat_header{
+    background-color: var(--color-teal) !important;
+    border-color: var(--color-teal) !important;
+}
+
+.bg_chillis{
+    background-image: url("../../assets/Chilli\'s.jpg");
+    background-size: 20rem;
+}
+.bg_mc{
+    background-image: url("../../assets/McDonald\'s.jpg");
+    background-size: 20rem;
+}
+.bg_eusebios{
+    background-image: url("../../assets/Eusébios.jpg");
+    background-size: 20rem;
+}
+.bg_donamaria{
+    background-image: url("../../assets/DonaMariaPregaria.jpg");
+    background-size: 20rem;
+}
+.bg_pizzahut{
+    background-image: url("../../assets/PizzaHut.jpg");
+    background-size: 20rem;
+}
+.bg_subway{
+    background-image: url("../../assets/Subway.png");
+    background-size: 20rem;
+}
+.card_title_cat{
+    color:var(--color-teal);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.a_cat{
+    text-decoration: none !important;
+}
