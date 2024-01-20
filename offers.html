@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="/Web-Technologies-Class-Group-Project/Styles/style.css"> -->
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Offers</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>QuickBite</title>
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/apple-icon-72x72.png">
@@ -24,9 +24,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-</head>    
-
+</head>
 <body>
+    <script src="./js/index.js"></script>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
@@ -63,51 +64,239 @@
             </div>
         </div>
     </nav>
+
     <!-- background gradient -->
     <div class="bg">
-        <svg width="100%" height="130vh" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#ffbf69"></stop><stop offset="95%" stop-color="#ff9f1c"></stop></linearGradient></defs><path d="M 0,400 L 0,100 C 106.38277511961724,103.30143540669856 212.76555023923447,106.60287081339712 307,119 C 401.23444976076553,131.39712918660288 483.32057416267946,152.88995215311007 589,142 C 694.6794258373205,131.11004784688993 823.9521531100478,87.83732057416267 912,90 C 1000.0478468899522,92.16267942583733 1046.8708133971293,139.76076555023923 1128,149 C 1209.1291866028707,158.23923444976077 1324.5645933014353,129.1196172248804 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#ff9f1c"></stop><stop offset="95%" stop-color="#ffbf69"></stop></linearGradient></defs><path d="M 0,400 L 0,233 C 86.23923444976077,263.8038277511962 172.47846889952154,294.60765550239233 275,282 C 377.52153110047846,269.39234449760767 496.32535885167465,213.3732057416268 590,206 C 683.6746411483253,198.6267942583732 752.2200956937799,239.89952153110045 853,240 C 953.7799043062201,240.10047846889955 1086.7942583732058,199.02870813397132 1190,191 C 1293.2057416267942,182.97129186602868 1366.6028708133972,207.98564593301433 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1 img-fluid "></path></svg>
+        <svg width="100%" height="130vh" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="var(--color-light-orange)"></stop><stop offset="95%" stop-color="var(--color-orange)"></stop></linearGradient></defs><path d="M 0,400 L 0,100 C 106.38277511961724,103.30143540669856 212.76555023923447,106.60287081339712 307,119 C 401.23444976076553,131.39712918660288 483.32057416267946,152.88995215311007 589,142 C 694.6794258373205,131.11004784688993 823.9521531100478,87.83732057416267 912,90 C 1000.0478468899522,92.16267942583733 1046.8708133971293,139.76076555023923 1128,149 C 1209.1291866028707,158.23923444976077 1324.5645933014353,129.1196172248804 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="var(--color-orange)"></stop><stop offset="95%" stop-color="#ffbf69"></stop></linearGradient></defs><path d="M 0,400 L 0,233 C 86.23923444976077,263.8038277511962 172.47846889952154,294.60765550239233 275,282 C 377.52153110047846,269.39234449760767 496.32535885167465,213.3732057416268 590,206 C 683.6746411483253,198.6267942583732 752.2200956937799,239.89952153110045 853,240 C 953.7799043062201,240.10047846889955 1086.7942583732058,199.02870813397132 1190,191 C 1293.2057416267942,182.97129186602868 1366.6028708133972,207.98564593301433 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
     </div>
 
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center">
-                    <img src="./assets/discount-bubble.svg" alt="Discounts" class="mr-3">
-                    <h2>Discounts</h2>
-                </div>
+    <!-- Header -->
+    <section class="container mt-5 mb-4">
+        <div class="hero row align-items-center justify-content-center ">
+            
+            <h1 class="hero_title mb-4">Offers and Promos</h1>
+            <h6 class="hero_slogan mb-3">This is where you can find all the best discounts and offers in your area!</h6>
+            
+        </div>
+    </section>
+    
+    <!-- Categories -->
+    <div class="categories">
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/burger-fast-food-svgrepo-com.svg" alt="Burguers">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Burguers</a></h5>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-5">
-                <div class="d-flex align-items-center">
-                    <!-- Categories carousel -->
-                    <div id="carouselExample" class="carousel slide">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/food-color-pizza-slice-svgrepo-com.svg" alt="Pizzas">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Pizza</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/chicken-christmas-food-svgrepo-com.svg" alt="Chicken">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Chicken</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/dinner-food-foods-svgrepo-com.svg" alt="Dinner Food">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Dinner Food</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/food-color-sushi-svgrepo-com.svg" alt="Sushi">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Sushi</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/bowl-food-foods-svgrepo-com.svg" alt="Asian">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Asian</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/cold-dessert-food-svgrepo-com.svg" alt="Ice Cream">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Ice Cream</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/food-color-beer-95-svgrepo-com.svg" alt="Alcoholic Beverages">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Alcoholic Beverages</a></h5>
+            </div>
+        </div>
+        <div class="category">
+            <div class="icon-container">
+                <img src="./assets/icons-categorias/supermarkets-supermarket-svgrepo-com.svg" alt="Grocery Stores">
+            </div>
+            <div class="icon-text">
+                <h5><a href="#">Grocery Stores</a></h5>
+            </div>
+        </div>
+
+    </div>
+
+   <!-- Promotions -->
+    <section class="container mt-5 mb-4">
+
+        <div class="row mb-4">
+            <h1 class="hero_title mb-4">2-for-1 Deals</h1>
+
+            <!-- 2 for the price of 1 -->
+            <div class="col-md-12">
+                <div class="content text-center">
+                    <img src="./assets/nothing.png" alt="Nothing here" style="width: 50px; height: 50px;">
+                <h6 class="hero_slogan mt-3 mb-3">Unfortunately there's no special offers near you at the moment. </h6>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="row mb-4">
+            <h1 class="hero_title mb-4">Discounts %</h1>
+
+            <!-- % Discount -->
+            <div class="col-md-6">
+                
+                <div class="content text-center">
+                    <div class="frame" style="position: relative; display: inline-block;">
+                        <img src="./assets/Chilli's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 6" style="object-fit: cover;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="position: absolute; top: -8; right: 0; width: 50px; height: 50px;">
+                            <g>
+                                <path fill="#FFBF69" stroke="#fffff" stroke-width="1.632" d="M22.8428345,4.9344482L19.2999878,1L16,4.9344482L12.7000122,1L9.1571655,4.9344482L5,1v26.65625 C5,29.5029907,6.4970703,31,8.34375,31h15.3125C25.5029297,31,27,29.5029907,27,27.65625V1L22.8428345,4.9344482z M17,21.1713867 V22.25c0,0.5522461-0.4472656,1-1,1s-1-0.4477539-1-1v-0.9515381c-1.0842896-0.2927246-2.0419922-1.2032471-2.0419922-2.8497314 c0-0.5522461,0.4472656-1,1-1s1,0.4477539,1,1c0,0.6401367,0.2763672,0.9643555,0.8212891,0.9643555 c0.4882813,0,1.2626953-0.3510742,1.2626953-1.2929688c0-0.8017578-0.5224609-1.1499023-1.7148438-1.753418 c-0.9882813-0.5004883-2.3417969-1.1850586-2.3417969-2.7421875c0-1.4798584,0.7533569-2.5596313,2.0146484-2.9151611V9.75 c0-0.5522461,0.4472656-1,1-1s1,0.4477539,1,1v1.0462036c0.8589478,0.3190308,1.5164185,0.9351196,1.8535156,1.4030151 c0.3222656,0.4482422,0.2207031,1.0732422-0.2275391,1.3959961c-0.4472656,0.3222656-1.0683594,0.222168-1.3916016-0.2216797 c-0.0380859-0.050293-0.7519531-0.9804688-1.6640625-0.7529297c-0.1748047,0.0439453-0.5849609,0.1464844-0.5849609,1.0039063 c0,0.2822266,0.3671875,0.5131836,1.2451172,0.9575195c1.1191406,0.5668945,2.8115234,1.4228516,2.8115234,3.5380859 C19.0419922,19.6501465,18.1268311,20.7199097,17,21.1713867z"></path>
+                            </g>
+                        </svg>
+                    </div>  
+                    <div class="content-text">
+                        <h5><a href="#">Chillis - Tex Mex</a></h5>
+                    </div>
+                        
+                        
+                </div>    
+                   
+            </div>
+            <div class="col-md-6">
+               
+                
+                <div class="content text-center">
+                    <div class="frame" style="position: relative; display: inline-block;">
+                        <img src="./assets/Chilli's.jpg" class="d-block mx-auto rounded-2" alt="Restaurante 6" style="object-fit: cover;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="position: absolute; top: -8; right: 0; width: 50px; height: 50px;">
+                            <g>
+                                <path fill="#FFBF69" stroke="#fffff" stroke-width="1.632" d="M22.8428345,4.9344482L19.2999878,1L16,4.9344482L12.7000122,1L9.1571655,4.9344482L5,1v26.65625 C5,29.5029907,6.4970703,31,8.34375,31h15.3125C25.5029297,31,27,29.5029907,27,27.65625V1L22.8428345,4.9344482z M17,21.1713867 V22.25c0,0.5522461-0.4472656,1-1,1s-1-0.4477539-1-1v-0.9515381c-1.0842896-0.2927246-2.0419922-1.2032471-2.0419922-2.8497314 c0-0.5522461,0.4472656-1,1-1s1,0.4477539,1,1c0,0.6401367,0.2763672,0.9643555,0.8212891,0.9643555 c0.4882813,0,1.2626953-0.3510742,1.2626953-1.2929688c0-0.8017578-0.5224609-1.1499023-1.7148438-1.753418 c-0.9882813-0.5004883-2.3417969-1.1850586-2.3417969-2.7421875c0-1.4798584,0.7533569-2.5596313,2.0146484-2.9151611V9.75 c0-0.5522461,0.4472656-1,1-1s1,0.4477539,1,1v1.0462036c0.8589478,0.3190308,1.5164185,0.9351196,1.8535156,1.4030151 c0.3222656,0.4482422,0.2207031,1.0732422-0.2275391,1.3959961c-0.4472656,0.3222656-1.0683594,0.222168-1.3916016-0.2216797 c-0.0380859-0.050293-0.7519531-0.9804688-1.6640625-0.7529297c-0.1748047,0.0439453-0.5849609,0.1464844-0.5849609,1.0039063 c0,0.2822266,0.3671875,0.5131836,1.2451172,0.9575195c1.1191406,0.5668945,2.8115234,1.4228516,2.8115234,3.5380859 C19.0419922,19.6501465,18.1268311,20.7199097,17,21.1713867z"></path>
+                            </g>
+                        </svg>
+                    </div>  
+                    <div class="content-text">
+                        <h5><a href="#">Chillis - Tex Mex</a></h5>
+                    </div>
+                        
+                        
+                </div>    
+                   
+            </div>
+            
+        </div>  
+        
+        <div class="row mb-4">
+            <h1 class="hero_title mb-4">Special Offers</h1>
+
+            <!-- Special Offers-->
+            <div class="col-md-12">
+                <div class="content text-center">
+                    <img src="./assets/nothing.png" alt="Nothing here" style="width: 50px; height: 50px;">
+                <h6 class="hero_slogan mt-3 mb-3">Unfortunately there's no special offers near you at the moment. </h6>
+                </div>
+            </div>
+            
+        </div>    
+
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1 -->
+                <div class="col-md-4 text-center">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">About us</a></li>
+                        <li><a href="#" class="footer-links">Team</a></li>
+                        <li><a href="#" class="footer-links">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-md-4 text-center">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">Help and Support</a></li>
+                        <li><a href="#" class="footer-links">Partner with us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-md-4 text-center">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled text-sm">
+                        <li><a href="#" class="footer-links">Terms and Conditions</a></li>
+                        <li><a href="#" class="footer-links">Refund and Cancellation</a></li>
+                        <li><a href="#" class="footer-links">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <h5>FOLLOW US</h5>
+                    <div class="d-flex justify-content-center">
+                        <svg width="55px" height="55px" class="mr-2" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="var(--color-white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="var(--color-white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="var(--color-white)"></rect> <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="var(--color-white)" stroke-linecap="round"></rect> </g></svg>
+                        <svg fill="#FFFFFF" width="55px" height="55px" class="mr-2" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook</title> <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path> </g></svg>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>Receive exclusive offers in your mailbox</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
                         </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    
-    
+    </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>

@@ -33,6 +33,52 @@ h2 {
     font-weight: bolder;
     margin-left: 25px;
 }
-#carouselExample {
-    margin-top: 22vh;
+.categories a{
+    text-decoration: none;
+    color: black;
+}
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.category {
+    text-align: center;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.icon-container {
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon-container:hover {
+    background-color: var(--color-teal);
+}
+.icon-text {
+    width: 80px;
+    height: 80px;
+}
+.category h5 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+}
+.content-text a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
