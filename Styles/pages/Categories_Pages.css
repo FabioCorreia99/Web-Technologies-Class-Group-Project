@@ -33,7 +33,7 @@
 }
 .bg_donamaria{
     background-image: url("../../assets/DonaMariaPregaria.jpg");
-    background-size: 20rem;
+    background-size: 17rem;
 }
 .bg_pizzahut{
     background-image: url("../../assets/PizzaHut.jpg");
@@ -51,4 +51,16 @@
 }
 .a_cat{
     text-decoration: none !important;
+}
+
+
+.cart_img{
+    right: -60% !important;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .bg_chillis, .bg_mc, .bg_eusebios, .bg_donamaria, .bg_pizzahut, .bg_subway{
+        background-size: 30rem 17rem;
+    }
 }
