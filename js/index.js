@@ -32,3 +32,27 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Mostrar 3 restaurantes e mover 1 para a frente com a seta - Página offers
+$(document).ready(function () {                                             // correr o código depois de carregar o resto da página
+    
+    $("#restaurantCarousel").on("slide.bs.carousel", function (sliderEvent) {
+        var $currentRestaurant = $(sliderEvent.relatedTarget);                  // ir buscar o restaurante ativo
+        var currentIndex = $currentRestaurant.index()                           // index atual
+        var restaurantsPerSlide = 3;                                            
+        var total = $(".carousel-item").length;                                 // numero total de restaurantes
+
+        if (currentIndex >= (total - (restaurantsPerSlide - 1))) {              // verificar se o restaurante ativo é o ultimo
+            
+            var distance = (restaurantsPerSlide - (total-currentIndex));        // subtrair os restantes restaurantes ao numero total.
+            for (var i = 0; i < distance ;i++) {
+                if (sliderEvent.direction == "left") {
+                    $(".carousel-item").eq(i).appendTo(".carousel-inner");      // mover para a esquerda
+                }
+                else {
+                    $(".carousel-item").eq(0).appendTo(".carousel-inner");      // mover para a direita
+                }
+            }
+        }
+    });
+});

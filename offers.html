@@ -445,33 +445,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Function to customize the bootstrap slider -->
-    <script>
-        $(document).ready(function () {
-                // Mostrar 3 restaurantes e mover 1 para a frente com a seta
-            $("#restaurantCarousel").on("slide.bs.carousel", function (sliderEvent) {
-                var $currentRestaurant = $(sliderEvent.relatedTarget);                  // ir buscar o restaurante ativo
-                var currentIndex = $currentRestaurant.index()                           // index atual
-                var restaurantsPerSlide = 3;                                            
-                var total = $(".carousel-item").length;
-
-                if (currentIndex >= (total - (restaurantsPerSlide - 1))) {
-                    
-                    var distance = (restaurantsPerSlide - (total-currentIndex));
-                    for (var i = 0; i < distance ;i++) {
-                        if (sliderEvent.direction == "left") {
-                            $(".carousel-item").eq(i).appendTo(".carousel-inner");
-                        }
-                        else {
-                            $(".carousel-item").eq(0).appendTo(".carousel-inner");
-                        }
-                    }
-                }
-            });
-        });
-        
-    </script>
-
 
 </body>
 </html>
