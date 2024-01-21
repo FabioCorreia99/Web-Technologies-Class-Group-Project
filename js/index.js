@@ -8,7 +8,7 @@ setTimeout(function() {
     setTimeout(function() {
         splash.style.display = 'none';
         container.style.display = 'block';
-    }, 1000); //Tempo da transição
+    }, 100); //Tempo da transição
 }, 2000); //Tempo em que o splash aparece
 
 
