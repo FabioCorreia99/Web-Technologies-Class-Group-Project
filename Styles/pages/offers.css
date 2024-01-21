@@ -69,6 +69,10 @@ h2 {
     width: 80px;
     height: 80px;
 }
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
 .category h5 {
     margin: 0;
     padding: 0;
